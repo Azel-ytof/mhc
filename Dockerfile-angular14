@@ -1,0 +1,5 @@
+FROM node:18
+RUN apt update
+RUN apt -y dist-upgrade
+RUN npm install -g @angular/cli@14
+ENTRYPOINT npm
