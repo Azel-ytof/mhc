@@ -5,3 +5,4 @@ RUN apt -y install build-essential
 RUN apt -y install libssl-dev
 RUN apt -y install libpq-dev
 RUN apt -y install glibc-source
+RUN apt -y install poppler-utils
