@@ -1,9 +1,5 @@
 FROM linuxserver/ffmpeg:latest
-RUN apt update
-RUN apt dist-upgrade -y
-RUN apt -y install build-essential
-RUN apt -y install libssl-dev
-RUN apt -y install libpq-dev
-RUN apt -y install glibc-source
-RUN apt -y install poppler-utils
-CMD ["/bin/bash"]
+RUN apt update && \
+    apt dist-upgrade -y && \
+    apt -y install build-essential  libssl-dev libpq-dev glibc-source poppler-utils
+ENTRYPOINT ["/bin/bash", "-c"]
