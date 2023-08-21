@@ -1,4 +1,4 @@
-FROM linuxserver/ffmpeg:amd64-version-4.4-cli
+FROM linuxserver/ffmpeg:latest
 RUN apt update
 RUN apt dist-upgrade -y
 RUN apt -y install build-essential
