@@ -1,0 +1,10 @@
+FROM azelytof/mhc:libssl-glibc-ffmpeg-pdftoppm
+RUN apt update
+RUN apt dist-upgrade -y
+RUN apt -y install build-essential
+RUN apt -y install libssl-dev
+RUN apt -y install libpq-dev
+RUN apt -y install glibc-source
+RUN apt -y install poppler-utils
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x
+RUN apt -y install nodejs
